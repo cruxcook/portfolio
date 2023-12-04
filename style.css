@@ -9,3 +9,54 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav, .nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none; /* Remove bullet points */
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration: white; /* Add flashing color */
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;  /* Add space between underline and text*/
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default; /* Avoid cursor changes when hovering */
+}
